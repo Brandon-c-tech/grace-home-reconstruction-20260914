@@ -1,9 +1,10 @@
-# Independent homepage reconstruction
+# Grace homepage reconstruction experiment
 
-A research reconstruction generated from a frozen text specification and standalone image/font assets. This is not the official Grace portfolio.
+Only the homepage and its interactions are reconstructed. External project links retain their original destinations.
 
-Original reference and content/image source: https://www.gracezrx.com/
+- Root: frozen Codex isolated reconstruction R1.
+- /terra/: frozen GPT-5.6 Terra Responses API reconstruction R2, reasoning.effort high.
+- Both use the same previously frozen text and standalone asset package. R2 used an initial API output and one own-site self-check repair request. No original-site or R1 screenshots/code were given to R2.
+- Both leaderboards are independent browser-local demonstrations, not the original shared leaderboard.
 
-Only the homepage and its interactions are rebuilt; other project links retain their original destinations. All runtime files match the frozen R1 local delivery. The leaderboard is local to this browser and does not contact the original service.
-
-The original standalone image is included as supplied reference material; no independent reuse license was provided with that image. Font licenses are included in assets/fonts.
+Image and fonts retain their source provenance and font licenses in the deliverable reference package. This is an independent reconstruction experiment, not an official replacement for the original site.
