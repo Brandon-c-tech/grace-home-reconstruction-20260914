@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111319">
+  <meta name="description" content="Grace Zhong — responsible technology, music, writing, and creative entrepreneurship.">
+  <title>Grace — Independent Effects Reconstruction</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body id="top">
+  <header class="site-header">
+    <a class="brand" href="#top">Grace</a>
+    <nav aria-label="Main navigation">
+      <a href="#play">Play</a>
+      <a href="#work">Work</a>
+      <a href="#world">Signal</a>
+      <a href="https://www.gracezrx.com/writing.html">Writing</a>
+      <a href="https://www.gracezrx.com/memory.html">The Constellation</a>
+      <a href="https://www.gracezrx.com/future-news-2036/">Future News</a>
+      <a href="https://gatherwise.gracezrx.com/">Gatherwise</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="play" aria-labelledby="grace-heading">
+      <div class="hero-image" aria-hidden="true"><img src="assets/abstract-world.png" alt="" fetchpriority="high"></div>
+      <canvas id="fragment-canvas" aria-hidden="true"></canvas>
+      <div class="energy" role="status" aria-live="polite" aria-atomic="true">
+        <span>Archive energy</span>
+        <strong id="energy-count">0/4</strong>
+      </div>
+      <div class="hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow creator">creator</p>
+          <h1 id="grace-heading" class="glitch" data-text="GRACE">GRACE</h1>
+          <p class="hero-introduction">Hi, I’m Grace. I build at the intersection of responsible technology, music, writing, and creative entrepreneurship, transforming ideas into systems, platforms, performances, and communities with cultural and social impact.</p>
+        </div>
+        <div class="collection-controls" role="group" aria-label="Collect archive fragments">
+          <button type="button" data-collect="research" aria-pressed="false" style="--accent:#69e1d4">Research</button>
+          <button type="button" data-collect="venture" aria-pressed="false" style="--accent:#ff896a">Venture</button>
+          <button type="button" data-collect="music" aria-pressed="false" style="--accent:#dcff64">Music</button>
+          <button type="button" data-collect="writing" aria-pressed="false" style="--accent:#b4a1ff">Writing</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="runner-section" aria-labelledby="runner-heading">
+      <div class="runner-introduction reveal">
+        <p class="eyebrow">project runner</p>
+        <h2 id="runner-heading">Grace.exe keeps running.</h2>
+      </div>
+      <div class="game-shell" id="game-shell">
+        <div id="game-display">
+          <div class="game-stage" id="game-stage">
+            <canvas id="runner-canvas" aria-hidden="true"></canvas>
+            <div class="game-hud">
+              <span class="weather-pill" id="weather-label" role="status" aria-live="polite">Sunny</span>
+              <div class="score-pill"><span>Run score</span><strong id="run-score">0</strong></div>
+              <label class="name-field" for="runner-name"><span>Name</span><input id="runner-name" name="name" type="text" value="Grace" maxlength="14" autocomplete="off" spellcheck="false" enterkeyhint="done"></label>
+            </div>
+            <aside class="leaderboard" aria-labelledby="leaderboard-title">
+              <h3 id="leaderboard-title">Local leaderboard</h3>
+              <ol id="score-list"><li aria-label="No saved scores. Grace 0."><span>Grace</span><span>0</span></li></ol>
+            </aside>
+            <aside class="project-popup" id="project-popup" aria-hidden="true" aria-labelledby="recommendation-title">
+              <p class="eyebrow">Project pop-up</p>
+              <h3 id="recommendation-title">CNTR AISLE</h3>
+              <p id="recommendation-description">Responsible technology platform work at Brown.</p>
+              <a id="recommendation-link" href="https://www.cntr-aisle.org/" tabindex="-1">Open project</a>
+            </aside>
+          </div>
+        </div>
+        <div class="game-controls">
+          <button id="start-jump" type="button" aria-describedby="game-instructions">Start / Jump</button>
+          <button id="duck" type="button" aria-describedby="game-instructions">Duck</button>
+          <button id="game-toggle" type="button" aria-expanded="true" aria-controls="game-display">Hide game</button>
+        </div>
+      </div>
+      <p id="game-instructions" class="visually-hidden">Use Start / Jump, click the game picture, or press Space or Arrow Up to start. Use the same action again to jump. Hold Duck or Arrow Down to crouch. Hiding the game does not pause it. Scores are saved only to this browser when a run ends in a collision.</p>
+      <p id="runner-announcement" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></p>
+    </section>
+
+    <section class="folders" aria-label="Explore the project layers">
+      <a class="folder folder-constellation" href="https://www.gracezrx.com/memory.html#constellation">
+        <span class="folder-category">Hidden layer</span>
+        <h2>Open The Constellation</h2>
+        <p>A semantic constellation of infrastructure, venture systems, behavioral design, knowledge graphs, and speculative memory.</p>
+      </a>
+      <a class="folder folder-future" href="https://www.gracezrx.com/future-news-2036/">
+        <span class="folder-category">Simulation layer</span>
+        <h2>Open Future News 2036</h2>
+        <p>A speculative civilization simulator disguised as a future media ecosystem, with sliders, markets, Reddit-like discourse, and persistent world-state memory.</p>
+      </a>
+      <a class="folder folder-gatherwise" href="https://gatherwise.gracezrx.com/">
+        <span class="folder-category">Social planning layer</span>
+        <h2>Open Gatherwise</h2>
+        <p>An agentic outing planner that turns group constraints into ranked, explainable restaurant and activity plans with booking handoff.</p>
+      </a>
+    </section>
+
+    <div class="theme-banner" aria-label="Creative themes">
+      <div class="theme-track">
+        <div class="theme-group"><span>responsible ai</span><span>music tech</span><span>creative systems</span><span>entrepreneurship</span><span>writing</span><span>code</span><span>community</span><span>art as interface</span></div>
+        <div class="theme-group" aria-hidden="true"><span>responsible ai</span><span>music tech</span><span>creative systems</span><span>entrepreneurship</span><span>writing</span><span>code</span><span>community</span><span>art as interface</span></div>
+      </div>
+    </div>
+
+    <section class="work-section" id="work" aria-labelledby="work-heading">
+      <div class="section-heading reveal">
+        <p class="eyebrow">selected work</p>
+        <h2 id="work-heading">The work that makes the signal clear.</h2>
+      </div>
+      <div class="work-track" tabindex="0" role="region" aria-label="Selected work, horizontally scrollable">
+        <article class="work-card reveal" data-project="research" style="--accent:#69e1d4;--glow:#69e1d424">
+          <span class="project-number">01</span>
+          <h3>CNTR AISLE</h3>
+          <p>Project Manager &amp; Scrum Master for Brown's CNTR AISLE, helping turn AI legislation analysis into a clearer public platform.</p>
+          <div class="project-links"><a href="https://www.cntr-aisle.org/">Visit platform</a><a href="https://www.cntr-aisle.org/our-team">Team credit</a></div>
+        </article>
+        <article class="work-card reveal" style="--accent:#ff896a;--glow:#ff896a24">
+          <span class="project-number">02</span>
+          <h3>Future News 2036</h3>
+          <p>A speculative civilization simulator disguised as a future media ecosystem, with sliders, market signals, Reddit-like discourse, and persistent world-state memory.</p>
+          <div class="project-links"><a href="https://www.gracezrx.com/future-news-2036/">Open simulator</a></div>
+        </article>
+        <article class="work-card reveal" style="--accent:#dcff64;--glow:#dcff6424">
+          <span class="project-number">03</span>
+          <h3>Gatherwise</h3>
+          <p>A social-planning product that reads the occasion, group, budget, location, cuisine, and activity intent, then ranks clear plans with real place discovery and safe booking handoff.</p>
+          <div class="project-links"><a href="https://gatherwise.gracezrx.com/">Open Gatherwise</a></div>
+        </article>
+        <article class="work-card reveal" style="--accent:#f19dca;--glow:#f19dca24">
+          <span class="project-number">04</span>
+          <h3>Life Pulse</h3>
+          <p>A local-first aliveness operating system with proof-of-life rituals, adaptive planning, emotional repair, cloud sync, and a potato mythology that turns small actions into a living interface.</p>
+          <div class="project-links"><a href="https://lifepulse.gracezrx.com/">Open Life Pulse</a></div>
+        </article>
+        <article class="work-card reveal" data-project="venture" style="--accent:#ff896a;--glow:#ff896a24">
+          <span class="project-number">05</span>
+          <h3>Lyrebird Art</h3>
+          <p>Founder and President of a nonprofit arts organization, leading concerts, festivals, marketing, and donation campaigns that raised over $25,000.</p>
+          <div class="project-links"><a href="https://lyrebirdart.com/">Lyrebird Art</a><a href="https://gracezhong.me/2023-june-lyrebird-art-festival/">Festival</a></div>
+        </article>
+        <article class="work-card reveal" data-project="music" style="--accent:#dcff64;--glow:#dcff6424">
+          <span class="project-number">06</span>
+          <h3>Music x Tech</h3>
+          <p>Music as a system: MyMusicID, Euterpe.io operations, math-and-music research, and original compositions for cinematic worlds.</p>
+          <div class="project-links"><a href="https://gracezhong.me/my-music-id/">MyMusicID</a><a href="https://gracezhong.me/euterpe-io-internship/">Euterpe.io</a><a href="https://gracezhong.me/math-and-music/">Math + Music</a><a href="https://gracezhong.me/composing-performing/">Compositions</a></div>
+        </article>
+        <article class="work-card reveal" data-project="writing" style="--accent:#b4a1ff;--glow:#b4a1ff24">
+          <span class="project-number">07</span>
+          <h3>Awarded Writing</h3>
+          <p>Scholastic-recognized fiction and poetry, including a Short Story Gold Key, flash fiction mentions, and emotionally layered writing.</p>
+          <div class="project-links"><a href="https://www.gracezrx.com/writing.html">Gold Key story</a><a href="https://www.gracezrx.com/writing.html">Writing archive</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section" id="world" aria-labelledby="about-heading">
+      <div class="about-image"><img src="assets/abstract-world.png" alt="Abstract still life of glass, paper, architectural materials, a circular mirror, and translucent red and blue blocks." loading="lazy"></div>
+      <div class="about-copy reveal">
+        <p class="eyebrow">self introduction</p>
+        <h2 id="about-heading">My work lives in intersections.</h2>
+        <p>I’m Grace Zhong, an English and Mathematics student at Brown, a music composer, writer, project manager, nonprofit founder, and aspiring entrepreneur. I’m most alive when I can mix mediums: music with computation, storytelling with systems, art with social impact, and AI with responsibility. This site collects my maturing footprints: the things I have built, led, composed, questioned, and am still learning how to make real.</p>
+        <div class="about-tags"><span>Responsible AI</span><span>Music technology</span><span>Creative entrepreneurship</span><span>Writing as texture</span><span>Art as interface</span></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="contact-copy reveal">
+        <p class="eyebrow">contact</p>
+        <h2 id="contact-heading">Build the next strange system with Grace.</h2>
+        <div class="contact-links">
+          <a href="mailto:ruoxi_zhong@brown.edu">ruoxi_zhong@brown.edu</a>
+          <a href="https://gracezhong.me/math-tech-social-music-projects/">Music + tech projects</a>
+          <a href="https://gracezhong.me/composing-performing/">Composing</a>
+          <a href="https://www.gracezrx.com/writing.html">Writing</a>
+          <a href="https://www.gracezrx.com/memory.html">The Constellation</a>
+          <a href="https://gatherwise.gracezrx.com/">Gatherwise</a>
+          <a href="https://www.cntr-aisle.org/">CNTR AISLE</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
